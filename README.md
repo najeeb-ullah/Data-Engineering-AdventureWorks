@@ -1,54 +1,56 @@
-#📦 AdventureWorks Data Engineering Project on Azure
-This project is a comprehensive Data Engineering practice pipeline built using Microsoft Azure services and the AdventureWorks dataset. It simulates a real-world enterprise data flow, leveraging modern data engineering principles such as the Medallion Architecture (Bronze, Silver, Gold) and distributed data processing with PySpark.
+# 🚀 AdventureWorks Data Engineering Project on Azure
 
-🚀 Key Features
-Data Source:
-Extracted data from an on-premises Microsoft SQL Server (msSQL) database using Azure Data Factory (ADF) with an integration runtime gateway for secure access.
+This project is a practice **Data Engineering practice pipeline** built using Microsoft Azure services and the **AdventureWorks** dataset. It simulates a real-world enterprise data flow, leveraging modern data engineering principles such as the **Medallion Architecture (Bronze, Silver, Gold)** and distributed data processing with **PySpark**.
 
-ETL Pipeline:
+---
 
-Extract: Data extracted via ADF pipelines from various AdventureWorks tables.
+## 🧰 Key Features
 
-Transform: Used Azure Databricks (PySpark) to clean, normalize, and join data across multiple entities.
-Followed best practices like partitioning and schema enforcement.
+- **Data Source:**
+  - Extracted data from an **on-premises Microsoft SQL Server (msSQL)** database using **Azure Data Factory** with an integration runtime gateway for secure access.
 
-Load: Transformed data was written into Azure Data Lake Storage (ADLS Gen2) and modeled using Azure Synapse Analytics.
+- **ETL Pipeline:**
+  - **Extract:** Data ingested via ADF pipelines from multiple AdventureWorks tables.
+  - **Transform:** Cleaned and transformed using **Azure Databricks (PySpark)** with partitioning and schema enforcement.
+  - **Load:** Loaded into **Azure Data Lake Storage (ADLS Gen2)** and modeled in **Azure Synapse Analytics**.
 
-Medallion Architecture Implementation:
-Applied a multi-layer architecture to structure the data flow:
+- **Medallion Architecture:**
+  - **Bronze Layer:** Raw ingested data from source.
+  - **Silver Layer:** Cleaned and joined business-level data.
+  - **Gold Layer:** Aggregated and analytics-ready data for reporting.
 
-Bronze Layer: Raw ingested data from source systems.
+- **Data Modeling & Access:**
+  - Created **external tables and views** in Synapse Analytics.
+  - Ready for downstream reporting tools like **Power BI**.
 
-Silver Layer: Cleaned and joined data with business logic.
+---
 
-Gold Layer: Aggregated and analytics-ready data for reporting and dashboards.
+## 🛠️ Tech Stack
 
-Data Modeling & Access:
-Created external tables and views in Azure Synapse Analytics for efficient querying and downstream consumption by BI tools (e.g., Power BI).
+- Azure Data Factory  
+- Azure Databricks (PySpark)  
+- Azure Synapse Analytics  
+- Azure Data Lake Storage Gen2  
+- Microsoft SQL Server  
+- Medallion Architecture  
+- Power BI (Optional)
 
-🛠 Tech Stack
-Azure Data Factory
+---
 
-Azure Databricks (PySpark)
+## 🎯 Objective
 
-Azure Synapse Analytics
+The goal of this project is to simulate an enterprise-grade, cloud-based data pipeline using Azure, demonstrating a deep understanding of ETL, distributed data processing, and data modeling best practices.
 
-Azure Data Lake Storage Gen2
+---
 
-Microsoft SQL Server
+## 📚 What I Learned
 
-Medallion Architecture
+- Building scalable and modular ETL pipelines using cloud-native tools.
+- Working with large datasets and distributed computing using PySpark.
+- Structuring data with the Medallion architecture for clarity and performance.
+- Modeling and querying data efficiently in Azure Synapse.
 
-Power BI (Optional - for visualization)
+---
 
-🎯 Objective
-The aim of this project is to gain hands-on experience with cloud-based data engineering tools on Azure by simulating a real-world enterprise data pipeline — from extraction to transformation and analytical modeling.
+## 📁 Project Structure
 
-📚 Learnings
-Building scalable and modular ETL pipelines using cloud-native tools.
-
-Working with large datasets and distributed computing using PySpark.
-
-Implementing the Medallion architecture for organized and reusable data pipelines.
-
-Designing analytical models and querying with Synapse external tables.
