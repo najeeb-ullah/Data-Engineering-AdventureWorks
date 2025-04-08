@@ -49,8 +49,3 @@ The goal of this project is to simulate an enterprise-grade, cloud-based data pi
 - Working with large datasets and distributed computing using PySpark.
 - Structuring data with the Medallion architecture for clarity and performance.
 - Modeling and querying data efficiently in Azure Synapse.
-
----
-
-## 📁 Project Structure
-
